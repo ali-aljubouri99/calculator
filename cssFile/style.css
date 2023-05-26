@@ -1,0 +1,83 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+}
+.continer {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (min-width: 768px) {
+    .continer {
+        width: 750px;
+    }
+}
+@media (min-width: 992px) {
+    .continer {
+        width: 970px;
+    }
+}
+@media (min-width: 1200px) {
+    .continer {
+        width: 1190px;
+    }
+}
+section {
+    background-color: #eee;
+    width: 100%;
+    height: 100vh;
+}
+section .continer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+section .continer .content {
+    background: #333;
+    width: 320px;
+    height: 430px;
+    border-radius: 10px;
+    padding: 20px;
+}
+section .content form {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 30px;
+}
+section .content form input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 24px;
+}
+section form input::placeholder {
+    color: #000;
+}
+section .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+section .buttons button {
+    height: 50px;
+    border-radius: 50%;
+    width: 50px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #767474;
+    cursor: pointer;
+}
